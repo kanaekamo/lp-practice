@@ -28,7 +28,7 @@ transition: color 0.3s;
 }
 .keyvisual{
   background-image: url(../img/keyvisual/keyvisual.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .keyvisual_title{
@@ -148,10 +148,10 @@ transition: color 0.3s;
   overflow: hidden;
   font-size: 40px;
   text-align: center;
-  transition: background 0.5s;
+  transition: color 0.5s;
 }
 .fab:hover{
-  background: #fff;
+  color: #fff;
 }
 footer{
   background: #cfd8dc;
