@@ -1,13 +1,22 @@
 @charset "utf-8";
+/*共通*/
 a{
   text-decoration:none;
+}
+header{
+  background:#fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
 }
 .inner{
   width: 1100px;
   margin: 0 auto;
 }
-.header{
-background:#fff ;
+
+/*header*/
+.nav_header{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -26,16 +35,22 @@ transition: color 0.3s;
 .contact:hover{
   color: #333;
 }
+.sp_nav{
+  display: none;
+}
+
+/*keyvisual*/
 .keyvisual{
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 75px;
+  padding: 400px 0;
 }
 .keyvisual_title{
   font-size: 65px;
   font-weight: 700;
   color: #6ba7eb;
-  padding-top: 400px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -43,9 +58,10 @@ transition: color 0.3s;
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
-  padding-bottom: 400px;
   text-align: center;
 }
+
+/*work*/
 .work{
   background: #e3f2fd;
 }
@@ -78,11 +94,13 @@ transition: color 0.3s;
   word-break: break-all;
   text-align: center;
 }
+
+/*skills*/
 .skills{
   background: #fff;
 }
 .skills_inner{
-  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 .skills_plan_title{
   font-size: 40px;
@@ -104,6 +122,8 @@ transition: color 0.3s;
 .skills_img img:hover{
   opacity: 1.0;
 }
+
+/*plan*/
 .plan{
   background: #d0dfea;
 }
@@ -133,6 +153,8 @@ transition: color 0.3s;
 .plan_table tr:first-child{
   background: #6ba7eb;
 }
+
+/*sns*/
 .sns{
   background: #e3f2fd;
   padding: 200px 0;
@@ -153,6 +175,8 @@ transition: color 0.3s;
 .fab:hover{
   color: #fff;
 }
+
+/*footer*/
 footer{
   background: #cfd8dc;
   padding: 20px 0;
@@ -161,4 +185,106 @@ footer p{
   font-size: 10px;
   letter-spacing: 0.5px;
   text-align: right;
+}
+
+/*レスポンシブTAB*/
+@media screen and (max-width:1199px){
+  .inner{
+    width: 97%;
+  }
+  .keyvisual{
+    padding: 250px 0;
+  }
+  .work_flex{
+    display: block;
+    padding: 50px 0;
+  }
+  .work_img,.work_title,.work_text{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skills_img{
+    display: block;
+  }
+  .skills_img img{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .skills_img a:nth-child(3n){
+    display: block;
+    margin-bottom: 80px;
+  }
+}
+
+/*レスポンシブSP*/
+@media screen and (max-width:767px){
+  .sp_nav{
+    display: block;
+  }
+  .inner{
+    width: 97%;
+  }
+  .contact{
+    display: none;
+  }
+  .humberger{
+    display: none;
+  }
+  .humberger_label{
+    display: flex;
+    height: 40px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: #8c8c8c solid 3px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .humberger_label span,.humberger_label span::before,.humberger_label span::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 35px;
+    background: #8c8c8c;
+    position: absolute;
+  }
+  .humberger_label span::before{
+    bottom: 10px;
+  }
+  .humberger_label span::after{
+    top: 10px;
+  }
+  .keyvisual{
+    padding: 200px 0;
+  }
+  .keyvisual_title{
+    font-size: 40px;
+  }
+  .keyvisual_subtitle{
+    font-size: 30px;
+  }
+  .skills_img a:nth-child(3n){
+    margin-bottom: 100px;
+  }
+  .plan_table th{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .plan_table td{
+    font-size: 12px;
+  }
+  .sns{
+    padding: 50px 15px;
+  }
+  .sns_flex{
+    display: block;
+  }
+  .fab{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 0;
+  }
 }
