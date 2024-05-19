@@ -3,6 +3,12 @@
 a{
   text-decoration:none;
 }
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*header*/
 header{
   background:#fff;
   position: fixed;
@@ -10,12 +16,10 @@ header{
   top: 0;
   width: 100%;
 }
-.inner{
-  width: 1100px;
+.header_inner{
+  width: 1000px;
   margin: 0 auto;
 }
-
-/*header*/
 .nav_header{
 display: flex;
 justify-content: space-between;
@@ -215,6 +219,9 @@ footer p{
     display: block;
     margin-bottom: 80px;
   }
+  .skills_img a:last-child{
+    margin-bottom: 70px;
+  }
 }
 
 /*レスポンシブSP*/
@@ -264,9 +271,6 @@ footer p{
   }
   .keyvisual_subtitle{
     font-size: 30px;
-  }
-  .skills_img a:nth-child(3n){
-    margin-bottom: 100px;
   }
   .plan_table th{
     font-size: 14px;
