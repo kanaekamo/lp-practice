@@ -17,8 +17,7 @@ header{
   width: 100%;
 }
 .header_inner{
-  width: 1000px;
-  margin: 0 auto;
+  padding: 0 15px;
 }
 .nav_header{
 display: flex;
@@ -48,7 +47,7 @@ transition: color 0.3s;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 75px;
+  margin-top: 78px;
   padding: 400px 0;
 }
 .keyvisual_title{
